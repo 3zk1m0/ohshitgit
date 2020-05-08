@@ -1,12 +1,12 @@
 ---
 tags: tip
-title: Oh shit, I need to change the message on my last commit!
+title: Voi paska, pitäis muuttaa viimisen commitin viestiä!
 id: change-last-commit-message
 order: 3
 ---
 ```git
 git commit --amend
-# follow prompts to change the commit message
+# seuraa kehotuksia commitin muuttamiseksi
 ```
 
-Stupid commit message formatting requirements.
+Tyhmät commit viestin muuttamis vaatimukest.

@@ -1,18 +1,20 @@
 ---
 tags: tip
-title: Oh shit, I committed and immediately realized I need to make one small change!
+title: Voi paska, commitoin jo, mutta tajusti että pitäsi tehdä vielä pieni muutos!
 id: change-last-commit
 order: 2
 ---
 
 ```git
-# make your change
-git add . # or add individual files
+# tee muutoksesi
+git add . # tai yksittäiset tiedostot
 git commit --amend --no-edit
-# now your last commit contains that change!
-# WARNING: never amend public commits
+# nyt viisimin committisi sisältää kyseisen muutoksen!
+# Varoitus: älä koskaan ammendoi julkista committia
 ```
 
-This usually happens to me if I commit, then run tests/linters... and FML, I didn't put a space after an equals sign. You could also make the change as a new commit and then do `rebase -i` in order to squash them both together, but this is about a million times faster. 
+Itselleni käy usein näin kun commitoin, testejä/lintteriä ajaessa huomaan etten laittanut välilyönti yhtäkuin merkin jälkee. Voit myös tehdä muutokset uutena committina ja suorittaa `rebase -i` yhdistääksesi kummatkin, mutta ammendointi on pirusti nopeampi.
 
-*Warning: You should never amend commits that have been pushed up to a public/shared branch! Only amend commits that only exist in your local copy or you're gonna have a bad time.*
+
+*Varoitus: Älä koskaan ammendoi committia mikä on puskettu  julkiseen/jaettuun haaraan! Ammendoi vain paikallisia committeja, muuten tulet aiheuttamaan ongelmia.
+
